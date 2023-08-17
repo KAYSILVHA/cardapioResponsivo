@@ -1,0 +1,383 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  width: 100vw;
+  height: 10vh;
+  background-color: #CE3246;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  color: #FFFDFD;
+  border-bottom: 1px solid #d5d5d560;
+}
+
+.logo{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+nav{
+  display: flex;
+  width: 50vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+ul{
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+ul li{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+
+main{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner{
+  width: 100vw;
+  height: 35vh;
+  background-color: #CE3246;
+  color: #FFFDFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25%;
+}
+
+.banner h2{
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.banner h1{
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.barraDePesquisa{
+  position: absolute;
+  top: 42.5vh;
+  width: 600px;
+  height: 55px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFFDFD;
+  border: 1px solid #E5E5E5;
+  padding: 15px;
+  color: #9D9797;
+  font-size: 16px;
+}
+
+.categorias{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 50px;
+  height: auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.titles{
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titles h2{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  color: #9D9797;
+}
+
+.titles p{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #B1AFAF;
+}
+
+.p{
+  display: flex;
+  width: 100px;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+}
+
+.p img{
+  width: 20px;
+}
+
+.imagens-categoria{
+  width: 70vw;
+  justify-content: space-around;
+  display: flex;
+  gap: 10px;
+}
+
+.imagens-categoria img{
+  width: 60px;
+}
+
+.img{
+  width: 180px;
+  height: 150px;
+  border-radius: 11.2px;
+  border: 1.4px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #9D9797;
+}
+
+.cardapio{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0 0 0 50px;
+}
+
+.cardapio h2{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  color: #9D9797;
+  padding-left: 22%;
+  width: 100vw;
+}
+
+.comidas{
+  display: flex;
+  width: 70vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.comida{
+  width: 320px;
+  height: auto;
+  background-color: #FFFDFD;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+}
+
+.imagem-comida{
+  height: 50%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.imagem-comida img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+span{
+  color: #32CF52;
+  font-size: 18px;
+  text-align: center;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.infos h2{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  color: #211415;
+}
+
+.infos p{
+  color: #9D9797;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.preco{
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  color: #CECECE;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+}
+
+.preco p{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1384px){
+  .banner{
+    align-items: center;
+    padding: 0;
+  }
+
+  .banner h1{
+    font-size: 3.5rem;
+  }
+
+  .banner h2{
+    font-size: 2.5rem;
+  }
+
+  .barraDePesquisa{
+    width: 80%;
+  }
+
+  .comidas{
+    width: 100%;
+  }
+
+  .categorias{
+    padding: 50px;
+  }
+  .imagens-categoria{
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+  header nav{
+    display: none;
+  }
+
+  header{
+    justify-content: center;
+    height: 80px;
+  }
+  .categorias{
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .imagens-categoria{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardapio{
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .cardapio h2{
+    padding: 0;
+    text-align: center;
+  }
+  .banner{
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .banner h1{
+    width: 100vw;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .banner h2{
+    font-size: 1.3em;
+  }
+
+  .img img{
+    width: 3rem;
+  }
+
+  .img{
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+  }
+
+  .comida{
+    width: 90%;
+  }
+
+  .barraDePesquisa{
+    display: none;
+  }
+
+
+  .titles{
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    padding: 0 20px;
+  }
+  .titles h2{
+    font-size: 1.4em;
+  }
+
+  .img h2{
+    font-size: 1rem;
+  }
+  .preco{
+    flex-wrap: wrap;
+  }
+  
+}
