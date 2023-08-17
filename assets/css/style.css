@@ -38,6 +38,7 @@ nav{
   align-items: center;
   justify-content: center;
 }
+
 ul{
   display: flex;
   list-style: none;
@@ -53,12 +54,13 @@ ul li{
   padding: 10px;
 }
 
-
 main{
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .banner{
@@ -118,7 +120,8 @@ main{
   justify-content: space-around;
 }
 
-.titles h2{
+.titles h2,
+.cardapio h2{
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -176,9 +179,8 @@ main{
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
   align-items: center;
-  padding: 0 0 0 50px;
 }
 
 .cardapio h2{
@@ -186,23 +188,21 @@ main{
   font-style: normal;
   font-weight: 600;
   color: #9D9797;
-  padding-left: 22%;
-  width: 100vw;
 }
 
 .comidas{
   display: flex;
-  width: 70vw;
+  width: 60%;
   height: auto;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 15px;
   flex-wrap: wrap;
   padding: 20px 0;
+  gap: 10px;
 }
 
 .comida{
-  width: 320px;
+  width: 250px;
   height: auto;
   background-color: #FFFDFD;
   border: 1px solid #E5E5E5;
@@ -210,6 +210,7 @@ main{
 }
 
 .imagem-comida{
+  width: 100%;
   height: 50%;
   border-radius: 8px 8px 0px 0px;
 }
@@ -268,6 +269,7 @@ span{
 }
 
 
+
 @media screen and (max-width: 1384px){
   .banner{
     align-items: center;
@@ -287,7 +289,8 @@ span{
   }
 
   .comidas{
-    width: 100%;
+    width: 90%;
+    gap: 15px;
   }
 
   .categorias{
@@ -322,7 +325,7 @@ span{
   }
 
   .cardapio{
-    justify-content: center;
+    width: 100vw;
     gap: 8px;
   }
 
